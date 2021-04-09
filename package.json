@@ -1,14 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LegoOow/P6.git"
+    "url": "git+https://github.com/LegoOow/Projet_6.git"
   },
   "keywords": [
     "GIT#progamer69#"
@@ -16,7 +16,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LegoOow/P6/issues"
+    "url": "https://github.com/LegoOow/Projet_6/issues"
   },
-  "homepage": "https://github.com/LegoOow/P6#readme"
+  "homepage": "https://github.com/LegoOow/Projet_6#readme",
+  "description": ""
 }
