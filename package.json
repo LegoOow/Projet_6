@@ -19,5 +19,8 @@
     "url": "https://github.com/LegoOow/Projet_6/issues"
   },
   "homepage": "https://github.com/LegoOow/Projet_6#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
