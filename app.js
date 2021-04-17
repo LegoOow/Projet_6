@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
 
-const stuffRoutes = require('./routes/sauces');
+const saucesRoutes = require('./routes/sauces');
 const userRoutes = require('./routes/user');
 
 mongoose.connect('mongodb+srv://chato:c4wKCmhDZErlwAFy@cluster0.agsqp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
@@ -30,7 +30,7 @@ app.use(cors());
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-app.use('/api/sauces', stuffRoutes);
+app.use('/api/sauces', saucesRoutes);
 app.use('/api/auth', userRoutes)
 
 module.exports = app;
