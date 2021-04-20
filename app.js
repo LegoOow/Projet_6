@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const helmet = require("helmet");
 const cors = require('cors');
@@ -8,7 +9,11 @@ const path = require('path');
 const saucesRoutes = require('./routes/sauces');
 const userRoutes = require('./routes/user');
 
-mongoose.connect('mongodb+srv://chato:c4wKCmhDZErlwAFy@cluster0.agsqp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+const USER = process.env.USER;
+const PASS = process.env.PASS;
+const HOST = process.env.HOST;
+
+mongoose.connect(`mongodb+srv://${USER}:${PASS}@${HOST}`,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
